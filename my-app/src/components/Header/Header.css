@@ -1,10 +1,10 @@
-@media (max-width:992px) {
+@media (max-width:1200px) {
     .top-bar{
         display: none;
     }
     
 }
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .top-bar{
         display: flex;
         height: 60px;
@@ -74,13 +74,13 @@
     border:0;
 }
 .navbar-center-1{
-    font-weight: 300;
+    font-weight: 500;
     font-size: 0.9rem;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 .contain-navbar{
     margin: 0 3% !important;
