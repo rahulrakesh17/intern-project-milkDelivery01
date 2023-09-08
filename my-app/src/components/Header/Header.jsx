@@ -56,7 +56,6 @@ function Header() {
 
 
             <div className='navbar-container'>
-                <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid contain-navbar">
                         <div className='row' style={{width:"100%"}}>
                             <div className="col-1">
@@ -64,16 +63,20 @@ function Header() {
                                     <img src="pngwing.png" alt="Logo" width="100"  class="d-inline-block align-text-top"/>
                                 </a>
                             </div>
-                            <div class="col-10 collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
-                                <div class="navbar-nav navbar-center-1 ">
-                                    <a class="nav-link" href="#">HOME</a>
-                                    <a class="nav-link" href="#">PRODUCTS</a>
-                                    <a class="nav-link" href="#">BOOK TRAIL MILK</a>
-                                    <a class="nav-link" href="#">GOSHALA</a>
-                                    <a class="nav-link" href="#">ABOUT</a>
-                                    <a class="nav-link" href="#">PRESS & MEDIA</a>
+                            <div className='col-10 navbar-hide'>
+                                <div class="navbar-center">
+                                    <div class="navbar-center-1 ">
+                                        <a class="nav-link" href="#">HOME</a>
+                                        <a class="nav-link" href="#">PRODUCTS</a>
+                                        <a class="nav-link" href="#">BOOK TRAIL MILK</a>
+                                        <a class="nav-link" href="#">GOSHALA</a>
+                                        <a class="nav-link" href="#">ABOUT</a>
+                                        <a class="nav-link" href="#">PRESS & MEDIA</a>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            <div className='col-9 dummy'></div>
                             <div className="col-1 shopping-cart">
                                 <div className=''>
                                     <BiShoppingBag  size={30} color='white'/>
@@ -87,8 +90,6 @@ function Header() {
 
                         </div>
                     </div>
-                    
-                </nav>
 
             </div>
         </>
