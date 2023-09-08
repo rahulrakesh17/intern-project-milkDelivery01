@@ -11,7 +11,8 @@
         background-color: #f9f9f9;
     }
     .top-bar a{
-        color:#337CCF
+        color:#337CCF;
+        color:black
     }
     .top-bar-container{
         height: 60px;
@@ -21,8 +22,48 @@
         display: flex;
         align-items: center;
     }
+    a,p,h1,h2,span,div{
+        font-family: 'Montserrat';
+        font-size: 0.8rem;
+    }
     .top-bar span{
         font-family: 'Montserrat';
         margin-right: 10px;
     }
+    .icon-style{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+        padding-top:10px;
+    }
+    .contact{
+        font-size: smaller;
+    }
+    .location{
+        display: flex;
+        justify-content: center;
+    }
+    .location a{
+        color:#337CCF;
+    }
+    
+    .phone:hover{
+        color: black;
+    }
+    .mail:hover{
+        color: black;
+    }
+    .mail,.phone{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*......................................... navbar-style .....................................*/
+
+.navbar-container{
+    background-color: #337CCF;
+}
+.navbar-container a{
+    color:#ffffff;
 }
