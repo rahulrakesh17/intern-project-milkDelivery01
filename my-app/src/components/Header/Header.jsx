@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-import { FaLocationPin , FaRegEnvelope , FaPhone} from "react-icons/fa6"
+import { FaLocationPin ,FaBars, FaRegEnvelope , FaPhone} from "react-icons/fa6"
 import {BiShoppingBag , BiSolidShoppingBags} from "react-icons/bi"
 
 
@@ -57,11 +57,14 @@ function Header() {
 
             <div className='navbar-container'>
                 <nav class="navbar navbar-expand-lg ">
-                    <div class="container-xxl contain-navbar">
-                        <a class="navbar-brand" href="#">
-                            <img src="pngwing.png" alt="Logo" width="100"  class="d-inline-block align-text-top"/>
-                        </a>
-                        
+                    <div class="container-fluid contain-navbar">
+                        <div className='row' style={{width:"100%"}}>
+                            <div className="col-1">
+                                <a class="navbar-brand" href="#">
+                                    <img src="pngwing.png" alt="Logo" width="100"  class="d-inline-block align-text-top"/>
+                                </a>
+                            </div>
+                            <div className="col-10">
                             <div class="collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
                                 <div class="navbar-nav navbar-center-1 ">
                                     <a class="nav-link" href="#">HOME</a>
@@ -72,12 +75,19 @@ function Header() {
                                     <a class="nav-link" href="#">PRESS & MEDIA</a>
                                 </div>
                             </div>
-                            <div className='shopping-cart'>
-                                <BiShoppingBag  size={30} color='white'/>
                             </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                            <div className="col-1">
+                                <div className='shopping-cart'>
+                                    <BiShoppingBag  size={30} color='white'/>
+                                </div>
+                            </div>
+                            <div className='col-2 toggle-bar'>
+                                <div>
+                                    <FaBars size={30} color="white"/>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     
                 </nav>
