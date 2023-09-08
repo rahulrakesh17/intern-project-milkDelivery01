@@ -1,12 +1,28 @@
-@media  (max-width:1025px) {
-    .topbar{
+@media (max-width:1025px) {
+    .top-bar{
         display: none;
     }
     
 }
 @media (min-width:1025px) {
-    .topbar{
+    .top-bar{
         display: flex;
+        height: 60px;
         background-color: #f9f9f9;
+    }
+    .top-bar a{
+        color:#337CCF
+    }
+    .top-bar-container{
+        height: 60px;
+        padding: 0 25px;
+    }
+    .vertical-center{
+        display: flex;
+        align-items: center;
+    }
+    .top-bar span{
+        font-family: 'Montserrat';
+        margin-right: 10px;
     }
 }
