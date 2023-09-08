@@ -1,0 +1,12 @@
+@media  (max-width:1025px) {
+    .topbar{
+        display: none;
+    }
+    
+}
+@media (min-width:1025px) {
+    .topbar{
+        display: flex;
+        background-color: #f9f9f9;
+    }
+}
