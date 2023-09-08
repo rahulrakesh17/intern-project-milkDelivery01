@@ -70,11 +70,15 @@
 .navbar-center{
     display: flex;
     justify-content:center;
+    width: 90%;
 }
 .navbar-center-1{
-    font-weight: 500;
-    font-size: 1rem;
-    width: 70%;
+    font-weight: 300;
+    font-size: 0.9rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .contain-navbar{
     margin: 0 3% !important;

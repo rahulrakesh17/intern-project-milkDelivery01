@@ -63,17 +63,17 @@ function Header() {
                         </a>
                         
                             <div class="collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
-                                <div class="navbar-nav navbar-center-1 row">
-                                    <a class="nav-link col" href="#">HOME</a>
-                                    <a class="nav-link col" href="#">PRODUCTS</a>
-                                    <a class="nav-link col" href="#">BOOK TRAIL </a>
-                                    <a class="nav-link col" href="#">Pricing</a>
-                                    <a class="nav-link col" href="#">Pricing</a>
-                                    <a class="nav-link col" href="#">Pricing</a>
+                                <div class="navbar-nav navbar-center-1 ">
+                                    <a class="nav-link" href="#">HOME</a>
+                                    <a class="nav-link" href="#">PRODUCTS</a>
+                                    <a class="nav-link" href="#">BOOK TRAIL MILK</a>
+                                    <a class="nav-link" href="#">GOSHALA</a>
+                                    <a class="nav-link" href="#">ABOUT</a>
+                                    <a class="nav-link" href="#">PRESS & MEDIA</a>
                                 </div>
                             </div>
                             <div className='shopping-cart'>
-                                <BiShoppingBag  size={40} color='white'/>
+                                <BiShoppingBag  size={30} color='white'/>
                             </div>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
