@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import { FaLocationPin , FaRegEnvelope , FaPhone} from "react-icons/fa6"
+import {BiShoppingBag , BiSolidShoppingBags} from "react-icons/bi"
 
 
 function Header() {
@@ -60,21 +61,27 @@ function Header() {
                         <a class="navbar-brand" href="#">
                             <img src="pngwing.png" alt="Logo" width="100"  class="d-inline-block align-text-top"/>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        
                             <div class="collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
                                 <div class="navbar-nav navbar-center-1 row">
-                                    <a class="nav-link col" href="#">Features</a>
-                                    <a class="nav-link col" href="#">Pricing</a>
-                                    <a class="nav-link col" href="#">Pricing</a>
+                                    <a class="nav-link col" href="#">HOME</a>
+                                    <a class="nav-link col" href="#">PRODUCTS</a>
+                                    <a class="nav-link col" href="#">BOOK TRAIL </a>
                                     <a class="nav-link col" href="#">Pricing</a>
                                     <a class="nav-link col" href="#">Pricing</a>
                                     <a class="nav-link col" href="#">Pricing</a>
                                 </div>
                             </div>
+                            <div className='shopping-cart'>
+                                <BiShoppingBag  size={40} color='white'/>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                     </div>
+                    
                 </nav>
+
             </div>
         </>
     )

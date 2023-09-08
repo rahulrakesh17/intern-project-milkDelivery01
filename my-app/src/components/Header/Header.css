@@ -79,3 +79,6 @@
 .contain-navbar{
     margin: 0 3% !important;
 }
+.shopping-cart{
+    float: right;
+}
