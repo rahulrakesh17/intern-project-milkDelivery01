@@ -39,9 +39,9 @@
     .contact{
         font-size: smaller;
     }
-    .location{
-        display: flex;
-        justify-content: center;
+    .location a{
+        position: relative;
+        left:40px;
     }
     .location a{
         color:#337CCF;
@@ -66,4 +66,16 @@
 }
 .navbar-container a{
     color:#ffffff;
+}
+.navbar-center{
+    display: flex;
+    justify-content:center;
+}
+.navbar-center-1{
+    font-weight: 500;
+    font-size: 1rem;
+    width: 70%;
+}
+.contain-navbar{
+    margin: 0 3% !important;
 }

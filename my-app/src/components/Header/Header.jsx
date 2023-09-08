@@ -56,20 +56,21 @@ function Header() {
 
             <div className='navbar-container'>
                 <nav class="navbar navbar-expand-lg ">
-                    <div class="container-lg">
+                    <div class="container-xxl contain-navbar">
                         <a class="navbar-brand" href="#">
                             <img src="pngwing.png" alt="Logo" width="100"  class="d-inline-block align-text-top"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                       
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav navbar-center">
-                                    <a class="nav-link" href="#">Features</a>
-                                    <a class="nav-link" href="#">Pricing</a>
-                                    <a class="nav-link" href="#">Pricing</a>
-                                    <a class="nav-link" href="#">Pricing</a>
+                            <div class="collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
+                                <div class="navbar-nav navbar-center-1 row">
+                                    <a class="nav-link col" href="#">Features</a>
+                                    <a class="nav-link col" href="#">Pricing</a>
+                                    <a class="nav-link col" href="#">Pricing</a>
+                                    <a class="nav-link col" href="#">Pricing</a>
+                                    <a class="nav-link col" href="#">Pricing</a>
+                                    <a class="nav-link col" href="#">Pricing</a>
                                 </div>
                             </div>
                     </div>
