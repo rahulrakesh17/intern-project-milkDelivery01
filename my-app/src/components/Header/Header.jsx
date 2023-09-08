@@ -64,8 +64,7 @@ function Header() {
                                     <img src="pngwing.png" alt="Logo" width="100"  class="d-inline-block align-text-top"/>
                                 </a>
                             </div>
-                            <div className="col-10">
-                            <div class="collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
+                            <div class="col-10 collapse navbar-collapse navbar-center" id="navbarNavAltMarkup">
                                 <div class="navbar-nav navbar-center-1 ">
                                     <a class="nav-link" href="#">HOME</a>
                                     <a class="nav-link" href="#">PRODUCTS</a>
@@ -75,13 +74,12 @@ function Header() {
                                     <a class="nav-link" href="#">PRESS & MEDIA</a>
                                 </div>
                             </div>
-                            </div>
-                            <div className="col-1">
-                                <div className='shopping-cart'>
+                            <div className="col-1 shopping-cart">
+                                <div className=''>
                                     <BiShoppingBag  size={30} color='white'/>
                                 </div>
                             </div>
-                            <div className='col-2 toggle-bar'>
+                            <div className='col-1 toggle-bar'>
                                 <div>
                                     <FaBars size={30} color="white"/>
                                 </div>
