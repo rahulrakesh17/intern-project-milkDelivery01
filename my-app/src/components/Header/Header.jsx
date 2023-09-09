@@ -1,10 +1,14 @@
 import React from 'react'
 import "./Header.css"
+
 import { FaLocationPin ,FaBars, FaRegEnvelope , FaPhone} from "react-icons/fa6"
 import {BiShoppingBag , BiSolidShoppingBags} from "react-icons/bi"
-
+import { useContext } from 'react';
+import { contextApi } from '../../context/Context';
 
 function Header() {
+    
+    const useContextApi = useContext(contextApi);
     return (
         <>
             <div className='top-bar'>
@@ -55,7 +59,16 @@ function Header() {
             </div>
 
 
+            <div id={useContextApi.SideNav?"mySidenav-active":"mySidenav"} className="sidenav">
+                    <a href="javascript:void(0)" className="closebtn" onClick={useContextApi.handleSideNav}>&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
             <div className='navbar-container'>
+                
                     <div class="container-fluid contain-navbar">
                         <div className='row' style={{width:"100%"}}>
                             <div className="col-1">
@@ -83,7 +96,7 @@ function Header() {
                                 </div>
                             </div>
                             <div className='col-1 toggle-bar'>
-                                <div>
+                                <div onClick={useContextApi.handleSideNav}>
                                     <FaBars size={30} color="white"/>
                                 </div>
                             </div>
