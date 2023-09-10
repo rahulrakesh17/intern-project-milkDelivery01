@@ -7,10 +7,9 @@ function Carousel() {
         const useContextApi = useContext(contextApi);
         console.log(useContextApi.carouselData.slides)
         return(
-            
-            <div>
+            <div className="carousel">
                 {useContextApi.carouselData.slides.map((item,index)=>{
-                    return <img src={item.src} alt={item.alt} key={index}></img>
+                    return <img src={item.src} alt={item.alt} key={index} className="slide"/>
                 })}
             </div>
 
