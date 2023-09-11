@@ -6,7 +6,7 @@ import {useState ,useEffect ,createContext,useRef} from "react"
 import data from "../data/CarouselData.json"
 const contextApi = createContext();
 
-const Contextprovider=({children})=>{
+const  Contextprovider=  ({children})=>{
   const [carouselData,setCarouselData]=useState(data);
   const [SideNav,setSideNav]=useState(false)
   const handleSideNav=()=>{
@@ -17,13 +17,15 @@ const Contextprovider=({children})=>{
   const db = getFirestore();
   const colRef = collection(db,"products");
   const [products,setProducts]=useState([])
-
-  getDocs(colRef)
-  .then((snapshot)=>{
-      snapshot.docs.forEach(item=>{
-          products.push({...item.data(),id:item.id})
-      })
-  })
+  
+  useEffect(() => {
+    getDocs (colRef)
+    .then((snapshot)=> {
+      const productData = [];
+      snapshot.forEach((doc) => productData.push({ ...doc.data(), id: doc.id }));
+      setProducts(productData);
+    });
+  }, []);
   console.log(products)
   return(
     <contextApi.Provider value={{
